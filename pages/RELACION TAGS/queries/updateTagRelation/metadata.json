@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE contraincendiosh.TAGS_HYDRATION\nSET\n\tTagID = {{tableTagsRelation.updatedRow.TagID}},\n\tEquipoID = {{tableTagsRelation.updatedRow.EquipoID}}\nWHERE RecordUniqueID = {{tableTagsRelation.updatedRow.RecordUniqueID}}\n",
+      "body": "UPDATE contraincendiosh.TAGS_HYDRATION\nSET\n\tTagID = {{tableTagsRelation.updatedRow.TagID}},\n\tEquipoID = {{tableTagsRelation.updatedRow.EquipoID}}\nWHERE TupleUniqueID = {{tableTagsRelation.updatedRow.TupleUniqueID}}\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,8 +37,8 @@
     "messages": [],
     "jsonPathKeys": [
       "tableTagsRelation.updatedRow.EquipoID",
-      "tableTagsRelation.updatedRow.RecordUniqueID",
-      "tableTagsRelation.updatedRow.TagID"
+      "tableTagsRelation.updatedRow.TagID",
+      "tableTagsRelation.updatedRow.TupleUniqueID"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

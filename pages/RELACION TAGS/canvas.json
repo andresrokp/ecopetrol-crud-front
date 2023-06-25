@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 530,
+          "bottomRow": 990,
           "containerStyle": "none",
           "snapRows": 47,
           "parentRowSpace": 1,
@@ -73,11 +73,11 @@
                   "key": "primaryColumns.TagID.computedValue"
                 },
                 {
-                  "key": "primaryColumns.RecordUniqueID.computedValue"
+                  "key": "primaryColumns.TupleUniqueID.computedValue"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 8,
+              "leftColumn": 6,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "showInlineEditingOptionDropdown": true,
@@ -112,7 +112,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1687731657370,
+              "columnUpdatedAt": 1687733877218,
               "primaryColumnId": "RecordUniqueID",
               "defaultSelectedRowIndices": [
                 0
@@ -121,7 +121,7 @@
               "widgetName": "tableTagsRelation",
               "defaultPageSize": 0,
               "columnOrder": [
-                "RecordUniqueID",
+                "TupleUniqueID",
                 "TagID",
                 "EquipoID",
                 "NombreEquipo",
@@ -136,7 +136,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 53,
+              "bottomRow": 99,
               "columnWidthMap": {
                 "TagID": 357,
                 "NombreEquipo": 135,
@@ -287,14 +287,14 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "RecordUniqueID": {
+                "TupleUniqueID": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
-                  "index": 3,
+                  "index": 0,
                   "width": 150,
-                  "originalId": "RecordUniqueID",
-                  "id": "RecordUniqueID",
-                  "alias": "RecordUniqueID",
+                  "originalId": "TupleUniqueID",
+                  "id": "TupleUniqueID",
+                  "alias": "TupleUniqueID",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -309,10 +309,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "RecordUniqueID",
+                  "label": "TupleUniqueID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"RecordUniqueID\"]))}}",
+                  "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TupleUniqueID\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -321,7 +321,7 @@
               "key": "7yn7yxuw74",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 54,
+              "rightColumn": 52,
               "textSize": "0.875rem",
               "widgetId": "gh9307yq6l",
               "allowAddNewRow": true,
