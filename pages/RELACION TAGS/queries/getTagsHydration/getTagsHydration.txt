@@ -1,1 +1,7 @@
-SELECT * FROM contraincendiosh.TAGS_HYDRATION;
+SELECT
+	TH.TagID,
+	TH.EquipoID,
+	E.NombreEquipo
+FROM
+	contraincendiosh.TAGS_HYDRATION TH
+	LEFT JOIN contraincendiosh.EQUIPOS E ON TH.EquipoID = E.EquipoID

@@ -52,7 +52,10 @@
                   "key": "primaryColumns.TagID.computedValue"
                 },
                 {
-                  "key": "primaryColumns.RecursoID.computedValue"
+                  "key": "primaryColumns.EquipoID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.NombreEquipo.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -90,7 +93,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1687721767619,
+              "columnUpdatedAt": 1687729902720,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -99,7 +102,8 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "TagID",
-                "RecursoID"
+                "EquipoID",
+                "NombreEquipo"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -139,18 +143,20 @@
                   "sticky": "",
                   "validation": {}
                 },
-                "RecursoID": {
+                "EquipoID": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
                   "index": 1,
                   "width": 150,
-                  "originalId": "RecursoID",
-                  "id": "RecursoID",
-                  "alias": "RecursoID",
+                  "originalId": "EquipoID",
+                  "id": "EquipoID",
+                  "alias": "EquipoID",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -159,12 +165,43 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "RecursoID",
+                  "label": "EquipoID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"RecursoID\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EquipoID\"]))}}",
                   "sticky": "",
-                  "validation": {}
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "NombreEquipo": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "NombreEquipo",
+                  "id": "NombreEquipo",
+                  "alias": "NombreEquipo",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "NombreEquipo",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreEquipo\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "key": "7yn7yxuw74",
