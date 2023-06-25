@@ -1,0 +1,18 @@
+INSERT INTO contraincendiosh.EQUIPOS
+  (EquipoID, NombreEquipo, EspecificacionesEquipo, EstadoTeorico, Fabricante, Unidad, Capacidad, BodegaAsignadaID, CodigoPec, ExpedienteLam, BaseRespuestaID, ActividadAplicacion, Observaciones)
+VALUES
+(
+  {{TableEquipos.newRow.EquipoID}},
+  {{TableEquipos.newRow.NombreEquipo}},
+  {{TableEquipos.newRow.EspecificacionesEquipo || ""}},
+  {{TableEquipos.newRow.EstadoTeorico || ""}},
+  {{TableEquipos.newRow.Fabricante || ""}},
+  {{TableEquipos.newRow.Unidad || ""}},
+  {{TableEquipos.newRow.Capacidad || 0}},
+  {{TableEquipos.newRow.BodegaAsignadaID || ""}},
+  {{TableEquipos.newRow.CodigoPec || ""}},
+  {{TableEquipos.newRow.ExpedienteLam || ""}},
+  {{TableEquipos.newRow.BaseRespuestaID || ""}},
+  {{TableEquipos.newRow.ActividadAplicacion || ""}},
+  {{TableEquipos.newRow.Observaciones || ""}}
+);

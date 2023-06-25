@@ -1,0 +1,12 @@
+INSERT INTO contraincendiosh.BODEGAS
+  (BodegaID, NombreBodega, TipoBodega, FacilidadSistemaTransporte, Instalacion, Vicepresidencia, GerenciaDpto)
+	VALUES
+(
+  {{TablaBodegas.newRow.BodegaID}},
+  {{TablaBodegas.newRow.NombreBodega}},
+  {{TablaBodegas.newRow.TipoBodega || ""}},
+  {{TablaBodegas.newRow.FacilidadSistemaTransporte || ""}},
+  {{TablaBodegas.newRow.Instalacion || ""}},
+  {{TablaBodegas.newRow.Vicepresidencia || ""}},
+  {{TablaBodegas.newRow.GerenciaDpto || ""}}
+);

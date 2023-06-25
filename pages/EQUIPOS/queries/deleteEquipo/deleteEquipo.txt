@@ -1,0 +1,1 @@
+DELETE FROM contraincendiosh.EQUIPOS WHERE TupleUniqueId = {{ Input1.text }};

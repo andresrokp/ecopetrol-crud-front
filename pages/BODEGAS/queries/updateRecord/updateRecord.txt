@@ -1,0 +1,10 @@
+UPDATE contraincendiosh.BODEGAS
+SET
+	BodegaID = {{TablaBodegas.updatedRow.BodegaID}},
+	NombreBodega = {{TablaBodegas.updatedRow.NombreBodega}},
+  TipoBodega = {{TablaBodegas.updatedRow.TipoBodega}},
+  FacilidadSistemaTransporte = {{TablaBodegas.updatedRow.FacilidadSistemaTransporte}},
+  Instalacion = {{TablaBodegas.updatedRow.Instalacion}},
+  Vicepresidencia = {{TablaBodegas.updatedRow.Vicepresidencia}},
+  GerenciaDpto = {{TablaBodegas.updatedRow.GerenciaDpto}}
+WHERE TupleUniqueID = {{ TablaBodegas.updatedRow.TupleUniqueID }};

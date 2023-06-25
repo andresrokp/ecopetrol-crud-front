@@ -1,0 +1,50 @@
+{
+  "pages": [
+    {
+      "id": "Menú Principal",
+      "isDefault": true
+    },
+    {
+      "id": "Ultima Bodega Equipo",
+      "isDefault": false
+    },
+    {
+      "id": "Registros Logs ",
+      "isDefault": false
+    },
+    {
+      "id": "EQUIPOS",
+      "isDefault": false
+    },
+    {
+      "id": "BODEGAS",
+      "isDefault": false
+    },
+    {
+      "id": "FORMULARIO EN CAMPO",
+      "isDefault": false
+    },
+    {
+      "id": "RELACION TAGS",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#EAEDFB",
+  "icon": "calender",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

@@ -1,0 +1,16 @@
+UPDATE contraincendiosh.EQUIPOS
+  SET
+	EquipoID = {{TableEquipos.updatedRow.EquipoID}},
+	NombreEquipo = {{TableEquipos.updatedRow.NombreEquipo}},
+EspecificacionesEquipo = {{TableEquipos.updatedRow.EspecificacionesEquipo}},
+EstadoTeorico = {{TableEquipos.updatedRow.EstadoTeorico}},
+Fabricante = {{TableEquipos.updatedRow.Fabricante}},
+Unidad = {{TableEquipos.updatedRow.Unidad}},
+Capacidad = {{TableEquipos.updatedRow.Capacidad}},
+BodegaAsignadaID = {{TableEquipos.updatedRow.BodegaAsignadaID}},
+CodigoPec = {{TableEquipos.updatedRow.CodigoPec}},
+ExpedienteLam = {{TableEquipos.updatedRow.ExpedienteLam}},
+BaseRespuestaID = {{TableEquipos.updatedRow.BaseRespuestaID}},
+ActividadAplicacion = {{TableEquipos.updatedRow.ActividadAplicacion}},
+Observaciones = {{TableEquipos.updatedRow.Observaciones}}
+  WHERE TupleUniqueId = {{ TableEquipos.updatedRow.TupleUniqueId }};
