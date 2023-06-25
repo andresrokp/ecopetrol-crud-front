@@ -1,0 +1,5 @@
+UPDATE contraincendiosh.TAGS_HYDRATION
+SET
+	TagID = {{tableTagsRelation.updatedRow.TagID}},
+	EquipoID = {{tableTagsRelation.updatedRow.EquipoID}}
+WHERE RecordUniqueID = {{tableTagsRelation.updatedRow.RecordUniqueID}}

@@ -150,6 +150,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onAddNewRowSave"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.onSave"
                 }
               ],
               "borderWidth": "1",
@@ -251,7 +254,8 @@
                   "discardBorderRadius": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
                   "discardButtonVariant": "TERTIARY",
                   "isSaveDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}",
-                  "isDiscardDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}"
+                  "isDiscardDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}",
+                  "onSave": "{{updateTagRelation.run().then(() => {\n  getTagsHydration.run();\n});}}"
                 },
                 "TagID": {
                   "allowCellWrapping": false,
