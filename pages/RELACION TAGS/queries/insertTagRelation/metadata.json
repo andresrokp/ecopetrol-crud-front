@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "getTagsHydration",
+    "name": "insertTagRelation",
     "datasource": {
       "name": "SQL pool ECO",
       "pluginId": "mssql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT\n\tTH.RecordUniqueID,\n\tTH.TagID,\n\tTH.EquipoID,\n\tE.NombreEquipo\nFROM\n\tcontraincendiosh.TAGS_HYDRATION TH\n\tLEFT JOIN contraincendiosh.EQUIPOS E ON TH.EquipoID = E.EquipoID",
+      "body": "INSERT INTO contraincendiosh.TAGS_HYDRATION(TagID,EquipoID)\nVALUES\n  (\n    {{ tableTagsRelation.newRow.TagID }},\n    {{ tableTagsRelation.newRow.EquipoID }}\n  );\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,19 +26,26 @@
         }
       ]
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      " tableTagsRelation.newRow.EquipoID ",
+      " tableTagsRelation.newRow.TagID "
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-25T19:34:47Z"
+    "createdAt": "2023-06-25T22:01:32Z"
   },
-  "id": "RELACION TAGS_getTagsHydration",
+  "id": "RELACION TAGS_insertTagRelation",
   "deleted": false,
-  "gitSyncId": "647f51050267f030216224f1_649896d7c2b6465fe22abea2"
+  "gitSyncId": "647f51050267f030216224f1_6498b93cfd339e5d2dc326ac"
 }

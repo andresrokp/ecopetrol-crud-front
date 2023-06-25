@@ -1,0 +1,6 @@
+INSERT INTO contraincendiosh.TAGS_HYDRATION(TagID,EquipoID)
+VALUES
+  (
+    {{ tableTagsRelation.newRow.TagID }},
+    {{ tableTagsRelation.newRow.EquipoID }}
+  );

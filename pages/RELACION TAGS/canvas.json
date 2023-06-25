@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 480,
+          "bottomRow": 530,
           "containerStyle": "none",
           "snapRows": 47,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "https://appcdn.appsmith.com/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
-              "topRow": 4,
+              "topRow": 0,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -49,19 +49,38 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.TagID.computedValue"
-                },
-                {
                   "key": "primaryColumns.EquipoID.computedValue"
                 },
                 {
                   "key": "primaryColumns.NombreEquipo.computedValue"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveButtonColor"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.saveBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.discardBorderRadius"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "primaryColumns.TagID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.RecordUniqueID.computedValue"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 25,
+              "leftColumn": 8,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleFilters": true,
               "isVisible": true,
@@ -93,56 +112,48 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1687729902720,
+              "columnUpdatedAt": 1687731657370,
+              "primaryColumnId": "RecordUniqueID",
               "defaultSelectedRowIndices": [
                 0
               ],
               "mobileBottomRow": 38,
-              "widgetName": "Table1",
+              "widgetName": "tableTagsRelation",
               "defaultPageSize": 0,
               "columnOrder": [
+                "RecordUniqueID",
                 "TagID",
                 "EquipoID",
-                "NombreEquipo"
+                "NombreEquipo",
+                "EditActions1"
               ],
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "primaryColumns.EditActions1.isSaveDisabled"
+                },
+                {
+                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                }
+              ],
               "displayName": "Table",
-              "bottomRow": 48,
-              "columnWidthMap": {},
+              "bottomRow": 53,
+              "columnWidthMap": {
+                "TagID": 357,
+                "NombreEquipo": 135,
+                "EquipoID": 117
+              },
               "parentRowSpace": 10,
               "hideCard": false,
+              "onAddNewRowSave": "{{insertTagRelation.run().then(() => {\n  getTagsHydration.run();\n}).catch(() => {\n  showAlert(\"\", '');\n});}}",
               "mobileRightColumn": 42,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onAddNewRowSave"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
-                "TagID": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "TagID",
-                  "id": "TagID",
-                  "alias": "TagID",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "TagID",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TagID\"]))}}",
-                  "sticky": "",
-                  "validation": {}
-                },
                 "EquipoID": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
@@ -161,14 +172,14 @@
                   "enableSort": true,
                   "isVisible": true,
                   "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
                   "isCellVisible": true,
                   "isDerived": false,
                   "label": "EquipoID",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EquipoID\"]))}}",
+                  "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EquipoID\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -181,7 +192,7 @@
                   "originalId": "NombreEquipo",
                   "id": "NombreEquipo",
                   "alias": "NombreEquipo",
-                  "horizontalAlignment": "LEFT",
+                  "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
                   "textColor": "",
@@ -198,7 +209,106 @@
                   "label": "NombreEquipo",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreEquipo\"]))}}",
+                  "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreEquipo\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "EditActions1": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "EditActions1",
+                  "id": "EditActions1",
+                  "alias": "EditActions1",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "editActions",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Save / Discard",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "right",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "saveIconAlign": "left",
+                  "discardIconAlign": "left",
+                  "saveActionLabel": "Save",
+                  "discardActionLabel": "Discard",
+                  "saveButtonColor": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+                  "discardButtonColor": "#F22B2B",
+                  "saveBorderRadius": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+                  "discardBorderRadius": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+                  "discardButtonVariant": "TERTIARY",
+                  "isSaveDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}",
+                  "isDiscardDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}"
+                },
+                "TagID": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 2,
+                  "width": 150,
+                  "originalId": "TagID",
+                  "id": "TagID",
+                  "alias": "TagID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": true,
+                  "isEditable": true,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "TagID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TagID\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "RecordUniqueID": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "RecordUniqueID",
+                  "id": "RecordUniqueID",
+                  "alias": "RecordUniqueID",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "RecordUniqueID",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"RecordUniqueID\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -207,9 +317,10 @@
               "key": "7yn7yxuw74",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 42,
+              "rightColumn": 54,
               "textSize": "0.875rem",
               "widgetId": "gh9307yq6l",
+              "allowAddNewRow": true,
               "minWidth": 450,
               "tableData": "{{getTagsHydration.data}}",
               "label": "Data",

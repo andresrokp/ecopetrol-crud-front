@@ -1,4 +1,5 @@
 SELECT
+	TH.RecordUniqueID,
 	TH.TagID,
 	TH.EquipoID,
 	E.NombreEquipo
