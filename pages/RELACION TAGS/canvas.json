@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1130,
+          "bottomRow": 950,
           "containerStyle": "none",
           "snapRows": 47,
           "parentRowSpace": 1,
@@ -28,7 +28,7 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "mobileBottomRow": 75,
-              "borderColor": "#E0DEDE",
+              "borderColor": "#16a34a",
               "widgetName": "Form1",
               "isCanvas": true,
               "displayName": "Form",
@@ -36,8 +36,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 103,
-              "bottomRow": 113,
+              "topRow": 85,
+              "bottomRow": 95,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -46,7 +46,7 @@
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 8,
+              "leftColumn": 7,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -61,7 +61,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 100,
+                  "bottomRow": 90,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -412,12 +412,12 @@
                   "flexLayers": []
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "positioning": "fixed",
               "key": "9qkvh69qyf",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 58,
+              "rightColumn": 57,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "o7dmt3coi6",
               "minWidth": 450,
@@ -427,16 +427,16 @@
               "isLoading": false,
               "mobileTopRow": 35,
               "responsiveBehavior": "fill",
-              "originalTopRow": 103,
+              "originalTopRow": 85,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 1,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 113,
+              "originalBottomRow": 95,
               "minDynamicHeight": 10
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "#16a34a",
               "isVisibleDownload": true,
               "iconSVG": "https://appcdn.appsmith.com/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
               "topRow": 0,
@@ -486,7 +486,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 10,
+              "leftColumn": 9,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "showInlineEditingOptionDropdown": true,
@@ -545,7 +545,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 98,
+              "bottomRow": 82,
               "columnWidthMap": {
                 "TagID": 357,
                 "NombreEquipo": 135,
@@ -564,7 +564,7 @@
                   "key": "primaryColumns.EditActions1.onSave"
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "primaryColumns": {
                 "EquipoID": {
                   "allowCellWrapping": false,
@@ -594,7 +594,7 @@
                   "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"EquipoID\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "NombreEquipo": {
                   "allowCellWrapping": false,
@@ -624,7 +624,7 @@
                   "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreEquipo\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "EditActions1": {
                   "allowCellWrapping": false,
@@ -664,7 +664,8 @@
                   "discardButtonVariant": "TERTIARY",
                   "isSaveDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( !tableTagsRelation.updatedRowIndices.includes(currentIndex)))}}",
-                  "onSave": "{{updateTagRelation.run().then(() => {\n  getTagsHydration.run();\n});}}"
+                  "onSave": "{{updateTagRelation.run().then(() => {\n  getTagsHydration.run();\n});}}",
+                  "cellBackground": "#fef08a"
                 },
                 "TagID": {
                   "allowCellWrapping": false,
@@ -694,7 +695,7 @@
                   "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TagID\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "TupleUniqueID": {
                   "allowCellWrapping": false,
@@ -707,7 +708,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#a1a1aa",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -724,13 +725,13 @@
                   "computedValue": "{{tableTagsRelation.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TupleUniqueID\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 }
               },
               "key": "7yn7yxuw74",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 56,
+              "rightColumn": 55,
               "textSize": "0.875rem",
               "widgetId": "gh9307yq6l",
               "allowAddNewRow": true,
@@ -746,6 +747,7 @@
               "responsiveBehavior": "fill",
               "mobileLeftColumn": 8,
               "isVisiblePagination": true,
+              "cellBackground": "#fef08a",
               "verticalAlignment": "CENTER"
             },
             {
@@ -761,7 +763,7 @@
                 "notification"
               ],
               "topRow": 0,
-              "bottomRow": 24,
+              "bottomRow": 240,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,

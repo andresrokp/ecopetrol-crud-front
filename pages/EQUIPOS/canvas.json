@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#15803d",
+              "borderColor": "#16a34a",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
               "topRow": 4,
@@ -104,7 +104,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 0,
+              "leftColumn": 4,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "showInlineEditingOptionDropdown": true,
@@ -196,7 +196,7 @@
                   "key": "onAddNewRowSave"
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "primaryColumns": {
                 "EspecificacionesEquipo": {
                   "allowCellWrapping": false,
@@ -550,7 +550,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#a1a1aa",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -663,7 +663,7 @@
               "key": "g6celntheu",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 56,
+              "rightColumn": 60,
               "textSize": "0.875rem",
               "widgetId": "rcdgulig0l",
               "allowAddNewRow": true,
@@ -747,7 +747,7 @@
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "mobileBottomRow": 75,
-              "borderColor": "#E0DEDE",
+              "borderColor": "#16a34a",
               "widgetName": "Form1",
               "isCanvas": true,
               "displayName": "Form",
@@ -755,8 +755,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 52,
-              "bottomRow": 62,
+              "topRow": 50,
+              "bottomRow": 60,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -765,7 +765,7 @@
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 7,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -780,7 +780,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 100,
+                  "bottomRow": 90,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -1137,12 +1137,12 @@
                   "flexLayers": []
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "positioning": "fixed",
               "key": "9qkvh69qyf",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 50,
+              "rightColumn": 57,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "gsrfnapohd",
               "minWidth": 450,
@@ -1152,11 +1152,11 @@
               "isLoading": false,
               "mobileTopRow": 35,
               "responsiveBehavior": "fill",
-              "originalTopRow": 52,
+              "originalTopRow": 50,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 1,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 62,
+              "originalBottomRow": 60,
               "minDynamicHeight": 10
             },
             {
@@ -1172,7 +1172,7 @@
                 "notification"
               ],
               "topRow": 0,
-              "bottomRow": 24,
+              "bottomRow": 240,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,

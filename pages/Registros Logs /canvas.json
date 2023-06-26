@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "#15803d",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
               "topRow": 4,
@@ -135,7 +135,7 @@
               "mobileRightColumn": 34,
               "parentColumnSpace": 6.84375,
               "dynamicTriggerPathList": [],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "primaryColumns": {
                 "ts": {
                   "allowCellWrapping": false,
@@ -165,7 +165,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ts\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "BodegaID": {
                   "allowCellWrapping": false,
@@ -195,7 +195,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"BodegaID\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "Latitude": {
                   "allowCellWrapping": false,
@@ -225,7 +225,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Latitude\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "Longitude": {
                   "allowCellWrapping": false,
@@ -255,7 +255,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Longitude\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "TagID": {
                   "allowCellWrapping": false,
@@ -285,7 +285,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TagID\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "Rssi": {
                   "allowCellWrapping": false,
@@ -315,7 +315,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Rssi\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 }
               },
               "key": "1ccov8rbon",
@@ -337,6 +337,7 @@
               "originalTopRow": 8,
               "mobileLeftColumn": 0,
               "isVisiblePagination": true,
+              "cellBackground": "#fef08a",
               "verticalAlignment": "CENTER"
             },
             {
