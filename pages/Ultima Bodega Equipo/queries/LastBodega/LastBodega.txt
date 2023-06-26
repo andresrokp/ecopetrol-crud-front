@@ -4,12 +4,12 @@ WITH CTE AS (
 )
 SELECT 
 	CTE.ts,
-	R.NombreRecurso,
+	R.NombreEquipo,
 	B.NombreBodega,
 	CTE.TagID
 FROM CTE
 	LEFT JOIN contraincendiosh.TAGS_HYDRATION TH ON CTE.TagID = TH.TagID
-	LEFT JOIN contraincendiosh.RECURSOS R ON R.RecursoID = TH.RecursoID
+	LEFT JOIN contraincendiosh.EQUIPOS R ON R.EquipoID = TH.EquipoID
 	LEFT JOIN contraincendiosh.BODEGAS B ON CTE.BodegaID = B.BodegaID
 WHERE posicion = 1
 ORDER BY ts DESC

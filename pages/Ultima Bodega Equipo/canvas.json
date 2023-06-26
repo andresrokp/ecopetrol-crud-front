@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "#15803d",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.24905525921dd6f5ff46d0dd843b9e12.svg",
               "topRow": 5,
@@ -52,13 +52,13 @@
                   "key": "primaryColumns.ts.computedValue"
                 },
                 {
-                  "key": "primaryColumns.NombreRecurso.computedValue"
-                },
-                {
                   "key": "primaryColumns.NombreBodega.computedValue"
                 },
                 {
                   "key": "primaryColumns.TagID.computedValue"
+                },
+                {
+                  "key": "primaryColumns.NombreEquipo.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -96,7 +96,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1686334337610,
+              "columnUpdatedAt": 1687799052702,
               "originalBottomRow": 53,
               "defaultSelectedRowIndices": [
                 0
@@ -105,10 +105,10 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "NombreRecurso",
                 "NombreBodega",
                 "ts",
-                "TagID"
+                "TagID",
+                "NombreEquipo"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -130,7 +130,7 @@
               "mobileRightColumn": 11,
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "primaryColumns": {
                 "ts": {
                   "allowCellWrapping": false,
@@ -160,37 +160,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( new Date(currentRow[\"ts\"])))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
-                },
-                "NombreRecurso": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "NombreRecurso",
-                  "id": "NombreRecurso",
-                  "alias": "NombreRecurso",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "NombreRecurso",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreRecurso\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "NombreBodega": {
                   "allowCellWrapping": false,
@@ -220,7 +190,7 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreBodega\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
                 },
                 "TagID": {
                   "allowCellWrapping": false,
@@ -250,7 +220,37 @@
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TagID\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "#fef08a"
+                },
+                "NombreEquipo": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "NombreEquipo",
+                  "id": "NombreEquipo",
+                  "alias": "NombreEquipo",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "NombreEquipo",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NombreEquipo\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fef08a"
                 }
               },
               "key": "8ydbu7iqgb",
@@ -273,6 +273,7 @@
               "originalTopRow": 6,
               "mobileLeftColumn": 0,
               "isVisiblePagination": true,
+              "cellBackground": "#fef08a",
               "verticalAlignment": "CENTER"
             },
             {

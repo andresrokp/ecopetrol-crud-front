@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "WITH CTE AS (\n    SELECT ts,TagID, BodegaID, ROW_NUMBER() OVER (PARTITION BY TagID ORDER BY ts DESC) AS posicion\n    FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS\n)\nSELECT \n\tCTE.ts,\n\tR.NombreRecurso,\n\tB.NombreBodega,\n\tCTE.TagID\nFROM CTE\n\tLEFT JOIN contraincendiosh.TAGS_HYDRATION TH ON CTE.TagID = TH.TagID\n\tLEFT JOIN contraincendiosh.RECURSOS R ON R.RecursoID = TH.RecursoID\n\tLEFT JOIN contraincendiosh.BODEGAS B ON CTE.BodegaID = B.BodegaID\nWHERE posicion = 1\nORDER BY ts DESC",
+      "body": "WITH CTE AS (\n    SELECT ts,TagID, BodegaID, ROW_NUMBER() OVER (PARTITION BY TagID ORDER BY ts DESC) AS posicion\n    FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS\n)\nSELECT \n\tCTE.ts,\n\tR.NombreEquipo,\n\tB.NombreBodega,\n\tCTE.TagID\nFROM CTE\n\tLEFT JOIN contraincendiosh.TAGS_HYDRATION TH ON CTE.TagID = TH.TagID\n\tLEFT JOIN contraincendiosh.EQUIPOS R ON R.EquipoID = TH.EquipoID\n\tLEFT JOIN contraincendiosh.BODEGAS B ON CTE.BodegaID = B.BodegaID\nWHERE posicion = 1\nORDER BY ts DESC",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
