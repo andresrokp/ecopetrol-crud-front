@@ -1,0 +1,1 @@
+SELECT BodegaID AS [value], NombreBodega AS [label] FROM contraincendiosh.BODEGAS ORDER BY [label]

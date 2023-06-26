@@ -452,10 +452,13 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "options"
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "[\n  {\n    \"label\": \"ESTACIÓN CEM\",\n    \"value\": \"estacioncem\"\n  },\n  {\n    \"label\": \"CASABE 1\",\n    \"value\": \"campocasabe1\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "options": "{{getDropdownBodegas.data}}",
                       "placeholderText": "Select option",
                       "isDisabled": false,
                       "key": "vhygk3phxo",
@@ -642,7 +645,18 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "FORMULARIO EN CAMPO_getDropdownBodegas",
+              "name": "getDropdownBodegas",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "FORMULARIO EN CAMPO",
