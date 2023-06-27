@@ -267,7 +267,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "mobileBottomRow": 14,
-                      "widgetName": "diligenciante",
+                      "widgetName": "inputDiligenciante",
                       "displayName": "Input",
                       "searchTags": [
                         "form",
@@ -330,7 +330,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "mobileBottomRow": 14,
-                      "widgetName": "cantidad",
+                      "widgetName": "inputCantidad",
                       "displayName": "Input",
                       "searchTags": [
                         "form",
@@ -368,7 +368,7 @@
                     {
                       "boxShadow": "none",
                       "mobileBottomRow": 23,
-                      "widgetName": "selectBodega",
+                      "widgetName": "dropdownBodega",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.1a5defb3c19b4cac4a27829d1f979e4c.svg",
@@ -429,7 +429,7 @@
                     {
                       "boxShadow": "none",
                       "mobileBottomRow": 23,
-                      "widgetName": "selectEquipo",
+                      "widgetName": "dropdownEquipo",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.1a5defb3c19b4cac4a27829d1f979e4c.svg",
@@ -490,7 +490,7 @@
                     {
                       "boxShadow": "none",
                       "mobileBottomRow": 23,
-                      "widgetName": "selectEstado",
+                      "widgetName": "dropdownEstado",
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.1a5defb3c19b4cac4a27829d1f979e4c.svg",
@@ -583,7 +583,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 17,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 54,
+              "originalBottomRow": 55,
               "minDynamicHeight": 10
             },
             {
@@ -599,7 +599,7 @@
                 "notification"
               ],
               "topRow": 0,
-              "bottomRow": 390,
+              "bottomRow": 39,
               "parentRowSpace": 1,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -792,6 +792,7 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 22,
                       "widgetName": "Button4",
+                      "onClick": "{{insertFormularioLog.run().then(() => {\n  closeModal('');\n});}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
@@ -805,6 +806,11 @@
                       "hideCard": false,
                       "mobileRightColumn": 63,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
@@ -877,7 +883,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "¿Quiere agregar la siguiente información?\n\nDiligenciante:\n\t{{diligenciante.text}}\n\nNombre de la Bodega:\n\t{{selectBodega.selectedOptionLabel}}\n\nNombre del Equipo:\n\t{{selectEquipo.selectedOptionLabel}}\n\nCantidad:\n\t{{cantidad.text}}\n\nEstado teórico:\n\t{{selectEstado.selectedOptionValue}}",
+                      "text": "¿Quiere agregar la siguiente información?\n\nDiligenciante:\n\t{{inputDiligenciante.text}}\n\nNombre de la Bodega:\n\t{{dropdownBodega.selectedOptionLabel}}\n\nNombre del Equipo:\n\t{{dropdownEquipo.selectedOptionLabel}}\n\nCantidad:\n\t{{inputCantidad.text}}\n\nEstado teórico:\n\t{{dropdownEstado.selectedOptionValue}}",
                       "key": "sptza5hlgt",
                       "isDeprecated": false,
                       "rightColumn": 57,

@@ -1,0 +1,11 @@
+INSERT INTO contraincendiosh.REGISTRO_FORMULARIO_LOGS
+  (ts, BodegaID, EquipoID, Cantidad, Diligenciante, EstadoTeorico)
+VALUES
+  (
+		{{ new Date().getTime() }},
+    {{ dropdownBodega.selectedOptionValue }},
+    {{ dropdownEquipo.selectedOptionValue }},
+		{{ inputCantidad.text }},
+		{{ inputDiligenciante.text }},
+    {{ dropdownEstado.selectedOptionValue }}
+  );
