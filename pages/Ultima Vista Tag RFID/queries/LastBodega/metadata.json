@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Ultima Bodega Equipo",
+    "pageId": "Ultima Vista Tag RFID",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -38,7 +38,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-09T15:20:50Z"
   },
-  "id": "Ultima Bodega Equipo_LastBodega",
+  "id": "Ultima Vista Tag RFID_LastBodega",
   "deleted": false,
   "gitSyncId": "647f51050267f030216224f1_648343525ccd0d13e4f8e4e2"
 }

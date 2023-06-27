@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Ultima Bodega Equipo",
-    "slug": "ultima-bodega-equipo",
+    "name": "Ultima Vista Tag RFID",
+    "slug": "ultima-vista-tag-rfid",
     "layouts": [
       {
         "viewMode": false,
@@ -341,7 +341,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Ultima Bodega Equipo_LastBodega",
+              "id": "Ultima Vista Tag RFID_LastBodega",
               "name": "LastBodega",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -352,7 +352,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Ultima Bodega Equipo",
+        "id": "Ultima Vista Tag RFID",
         "deleted": false,
         "policies": [],
         "userPermissions": []

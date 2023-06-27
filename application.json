@@ -5,11 +5,23 @@
       "isDefault": true
     },
     {
-      "id": "Ultima Bodega Equipo",
+      "id": "Ultima Vista Tag RFID",
+      "isDefault": false
+    },
+    {
+      "id": "Ultima inspeccion en sitio",
       "isDefault": false
     },
     {
       "id": "Registros Gateways Logs ",
+      "isDefault": false
+    },
+    {
+      "id": "Registros Formulario Logs",
+      "isDefault": false
+    },
+    {
+      "id": "FORMULARIO EN CAMPO",
       "isDefault": false
     },
     {
@@ -21,19 +33,7 @@
       "isDefault": false
     },
     {
-      "id": "FORMULARIO EN CAMPO",
-      "isDefault": false
-    },
-    {
       "id": "RELACION TAGS",
-      "isDefault": false
-    },
-    {
-      "id": "Registros Formulario Logs",
-      "isDefault": false
-    },
-    {
-      "id": "Ultima inspeccion en sitio",
       "isDefault": false
     }
   ],
