@@ -9,7 +9,7 @@
       "isDefault": false
     },
     {
-      "id": "Registros Logs ",
+      "id": "Registros Gateways Logs ",
       "isDefault": false
     },
     {
@@ -30,6 +30,10 @@
     },
     {
       "id": "Registros Formulario Logs",
+      "isDefault": false
+    },
+    {
+      "id": "Ultima inspeccion en sitio",
       "isDefault": false
     }
   ],

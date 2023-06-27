@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Registros Logs ",
-    "slug": "registros-logs",
+    "name": "Registros Gateways Logs ",
+    "slug": "registros-gateways-logs",
     "layouts": [
       {
         "viewMode": false,
@@ -128,7 +128,8 @@
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
-                "status": 85
+                "status": 85,
+                "ts": 205
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -405,7 +406,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Registros Logs _RegistrosGatewaysLogs",
+              "id": "Registros Gateways Logs _RegistrosGatewaysLogs",
               "name": "RegistrosGatewaysLogs",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -416,7 +417,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Registros Logs ",
+        "id": "Registros Gateways Logs ",
         "deleted": false,
         "policies": [],
         "userPermissions": []

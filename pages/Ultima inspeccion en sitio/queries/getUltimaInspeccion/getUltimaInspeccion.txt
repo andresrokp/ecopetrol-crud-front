@@ -1,0 +1,8 @@
+WITH CTE AS(
+	SELECT TupleUniqueID, ts, BodegaID, EquipoID, Cantidad, Diligenciante, EstadoTeorico, ROW_NUMBER() OVER (PARTITION BY BodegaID, EquipoID ORDER BY ts DESC) AS rownum
+	FROM contraincendiosh.REGISTRO_FORMULARIO_LOGS
+)
+SELECT TupleUniqueID, ts, BodegaID, EquipoID, Cantidad, Diligenciante, EstadoTeorico
+FROM CTE
+WHERE rownum = 1
+ORDER BY ts DESC
