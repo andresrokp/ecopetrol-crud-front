@@ -1,9 +1,9 @@
 {
-    "resetFormOnClick": false,
+    "resetFormOnClick": true,
     "boxShadow": "none",
     "mobileBottomRow": 22,
-    "widgetName": "Button4",
-    "onClick": "{{insertFormularioLog.run().then(() => {\n  closeModal('');\n});}}",
+    "widgetName": "buttonConfirmForm",
+    "onClick": "{{insertFormularioLog.run().then(() => {\n  closeModal('');\n  resetWidget(\"dropdownEquipo\", true);\n  resetWidget(\"dropdownBodega\", true);\n  resetWidget(\"dropdownEstado\", true);\n  resetWidget(\"inputCantidad\", true);\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",
