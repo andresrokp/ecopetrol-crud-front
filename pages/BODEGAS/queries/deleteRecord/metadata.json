@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM contraincendiosh.BODEGAS WHERE TupleUniqueID = {{ Input1.text }};",
+      "body": "DELETE FROM contraincendiosh.BODEGAS WHERE TupleUniqueID = {{ inputUniqueID.text }};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      " Input1.text "
+      " inputUniqueID.text "
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
