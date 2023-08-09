@@ -3,7 +3,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Button3",
-    "onClick": "{{deleteRecord.run().then(() => {\n  getTable.run();\n});\ncloseModal('')}}",
+    "onClick": "{{deleteBodega.run().then(() => {\n  getBodegas.run();\n});\ncloseModal('')}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "/static/media/icon.7beb9123fb53027d9d6b778cdfe4caed.svg",

@@ -28,8 +28,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "BODEGAS_getTable",
-              "name": "getTable",
+              "id": "BODEGAS_getBodegas",
+              "name": "getBodegas",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

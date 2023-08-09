@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "updateRecord",
+    "name": "updateBodega",
     "datasource": {
       "name": "SQL pool ECO",
       "pluginId": "mssql-plugin",
@@ -51,7 +51,7 @@
     "userPermissions": [],
     "createdAt": "2023-06-12T23:40:35Z"
   },
-  "id": "BODEGAS_updateRecord",
+  "id": "BODEGAS_updateBodega",
   "deleted": false,
   "gitSyncId": "647f51050267f030216224f1_6487acf3b9d5b04765995197"
 }
