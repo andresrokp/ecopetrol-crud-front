@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "¿Desea eliminar el Equipo?\n\n- TupleUniqueId = {{Input1.text}}\n- EquipoID = {{Input2.text}}\n- Nombre = {{Input3.text}}",
+    "text": "¿Desea eliminar el Equipo?\n\n- TupleUniqueId = {{InputUniqueID.text}}\n- EquipoID = {{InputEquipoId.text}}\n- Nombre = {{InputNombreEquipo.text}}",
     "key": "gayrl4h0zq",
     "isDeprecated": false,
     "rightColumn": 63,

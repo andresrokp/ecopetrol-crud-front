@@ -6,14 +6,16 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 13,
+    "leftColumn": 41,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
+        {"key": "placeholderText"},
         {"key": "defaultText"}
     ],
     "labelStyle": "",
     "inputType": "TEXT",
+    "placeholderText": "{{TableEquipos.selectedRow.NombreRecurso}}",
     "isDisabled": true,
     "isRequired": false,
     "dynamicHeight": "FIXED",
@@ -25,7 +27,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 14,
     "mobileBottomRow": 19,
-    "widgetName": "Input1",
+    "widgetName": "InputNombreEquipo",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -44,10 +46,10 @@
     "key": "2lxuhktkgh",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 27,
-    "widgetId": "w55faxm465",
+    "rightColumn": 54,
+    "widgetId": "ophifinirf",
     "minWidth": 450,
-    "label": "TupleUniqueId",
+    "label": "Nombre",
     "parentId": "i3c10cs9tp",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
@@ -57,6 +59,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{TableEquipos.selectedRow.TupleUniqueId}}",
+    "defaultText": "{{TableEquipos.selectedRow.NombreEquipo}}",
     "minDynamicHeight": 4
 }

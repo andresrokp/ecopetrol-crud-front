@@ -6,7 +6,7 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 41,
+    "leftColumn": 27,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -27,7 +27,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 14,
     "mobileBottomRow": 19,
-    "widgetName": "Input3",
+    "widgetName": "InputEquipoId",
     "displayName": "Input",
     "searchTags": [
         "form",
@@ -46,10 +46,10 @@
     "key": "2lxuhktkgh",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 54,
-    "widgetId": "ophifinirf",
+    "rightColumn": 41,
+    "widgetId": "ckyhajhuq4",
     "minWidth": 450,
-    "label": "Nombre",
+    "label": "EquipoID",
     "parentId": "i3c10cs9tp",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
@@ -59,6 +59,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{TableEquipos.selectedRow.NombreEquipo}}",
+    "defaultText": "{{TableEquipos.selectedRow.EquipoID}}",
     "minDynamicHeight": 4
 }

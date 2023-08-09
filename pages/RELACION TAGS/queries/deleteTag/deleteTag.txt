@@ -1,1 +1,1 @@
-DELETE FROM contraincendiosh.TAGS_HYDRATION WHERE TupleUniqueID = {{ Input1.text }};
+DELETE FROM contraincendiosh.TAGS_HYDRATION WHERE TupleUniqueID = {{ InputUniqueID.text }};
