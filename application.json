@@ -35,6 +35,10 @@
     {
       "id": "RELACION TAGS",
       "isDefault": false
+    },
+    {
+      "id": "tabla prueba connexion",
+      "isDefault": false
     }
   ],
   "viewMode": false,

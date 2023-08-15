@@ -77,7 +77,7 @@
         {"key": "primaryColumns.EditActions1.isDiscardDisabled"}
     ],
     "displayName": "Table",
-    "bottomRow": 82,
+    "bottomRow": 81,
     "columnWidthMap": {
         "NombreEquipo": 135,
         "TagID": 357,

@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Ultima Vista Tag RFID",
-    "slug": "ultima-vista-tag-rfid",
+    "name": "tabla prueba connexion",
+    "slug": "tabla-prueba-connexion",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 520,
+          "bottomRow": 590,
           "containerStyle": "none",
           "snapRows": 47,
           "parentRowSpace": 1,
@@ -28,8 +28,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Ultima Vista Tag RFID_LastBodega",
-              "name": "LastBodega",
+              "id": "tabla prueba connexion_getPseudoPrueba",
+              "name": "getPseudoPrueba",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -39,7 +39,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Ultima Vista Tag RFID",
+        "id": "tabla prueba connexion",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -50,5 +50,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "647f51050267f030216224f1_648342985ccd0d13e4f8e4b3"
+  "gitSyncId": "647f51050267f030216224f1_64d648a28fbb260f45563778"
 }
