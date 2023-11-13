@@ -5,11 +5,7 @@
       "isDefault": true
     },
     {
-      "id": "Ultima Vista Tag RFID",
-      "isDefault": false
-    },
-    {
-      "id": "Ultima inspeccion en sitio",
+      "id": "FORMULARIO EN CAMPO",
       "isDefault": false
     },
     {
@@ -21,10 +17,6 @@
       "isDefault": false
     },
     {
-      "id": "FORMULARIO EN CAMPO",
-      "isDefault": false
-    },
-    {
       "id": "EQUIPOS",
       "isDefault": false
     },
@@ -33,7 +25,19 @@
       "isDefault": false
     },
     {
+      "id": "BASES",
+      "isDefault": false
+    },
+    {
       "id": "RELACION TAGS",
+      "isDefault": false
+    },
+    {
+      "id": "Ultima Vista Tag RFID",
+      "isDefault": false
+    },
+    {
+      "id": "Ultima inspeccion en sitio",
       "isDefault": false
     },
     {
@@ -52,7 +56,11 @@
   "publishedAppLayout": {
     "type": "DESKTOP"
   },
-  "unpublishedCustomJSLibs": [],
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    }
+  ],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,
   "applicationVersion": 2,

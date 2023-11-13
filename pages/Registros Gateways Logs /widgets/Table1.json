@@ -272,6 +272,7 @@
     "rightColumn": 54,
     "textSize": "0.875rem",
     "widgetId": "2loycsz494",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{RegistrosGatewaysLogs.data}}",
     "label": "Data",

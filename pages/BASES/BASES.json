@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "FORMULARIO EN CAMPO",
-    "slug": "formulario-en-campo",
+    "name": "BASES",
+    "slug": "bases",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 550,
+          "bottomRow": 540,
           "containerStyle": "none",
           "snapRows": 47,
           "parentRowSpace": 1,
@@ -28,16 +28,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "FORMULARIO EN CAMPO_getDropdownBodegas",
-              "name": "getDropdownBodegas",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "FORMULARIO EN CAMPO_getDropdownEquipos",
-              "name": "getDropdownEquipos",
+              "id": "BASES_getBases",
+              "name": "getBases",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -47,7 +39,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "FORMULARIO EN CAMPO",
+        "id": "BASES",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -58,5 +50,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "647f51050267f030216224f1_648b2544ec992646d27d0eb8"
+  "gitSyncId": "647f51050267f030216224f1_655275f2fdb54d5697e197a1"
 }

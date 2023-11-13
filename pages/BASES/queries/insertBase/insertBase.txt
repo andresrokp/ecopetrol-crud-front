@@ -1,0 +1,10 @@
+INSERT INTO contraincendiosh.BASES
+  (BaseID, NombreBase, FuncionarioContacto, TelefonoContacto, CorreoContacto)
+	VALUES
+(
+  {{TablaBodegas.newRow.BaseID}},
+  {{TablaBodegas.newRow.NombreBase}},
+  {{TablaBodegas.newRow.FuncionarioContacto || ""}},
+  {{TablaBodegas.newRow.TelefonoContacto || ""}},
+  {{TablaBodegas.newRow.CorreoContacto || ""}}
+);

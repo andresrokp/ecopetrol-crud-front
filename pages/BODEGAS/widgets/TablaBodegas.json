@@ -393,6 +393,7 @@
     "textSize": "0.875rem",
     "widgetId": "rcdgulig0l",
     "allowAddNewRow": true,
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{getBodegas.data}}",
     "label": "Data",

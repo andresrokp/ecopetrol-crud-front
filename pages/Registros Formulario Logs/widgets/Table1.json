@@ -300,6 +300,7 @@
     "rightColumn": 57,
     "textSize": "0.875rem",
     "widgetId": "482c5liapy",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{getFormularioLogs.data}}",
     "label": "Data",

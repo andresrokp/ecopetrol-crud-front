@@ -1,0 +1,1 @@
+DELETE FROM contraincendiosh.BASES WHERE TupleUniqueID = {{ inputUniqueID.text }};

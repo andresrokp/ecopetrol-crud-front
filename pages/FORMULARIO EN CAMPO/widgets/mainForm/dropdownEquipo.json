@@ -26,6 +26,7 @@
     "mobileBottomRow": 23,
     "widgetName": "dropdownEquipo",
     "isFilterable": true,
+    "dynamicPropertyPathList": [{"key": "sourceData"}],
     "displayName": "Select",
     "searchTags": ["dropdown"],
     "bottomRow": 30,

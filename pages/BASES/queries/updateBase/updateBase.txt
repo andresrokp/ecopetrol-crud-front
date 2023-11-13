@@ -1,0 +1,8 @@
+UPDATE contraincendiosh.BASES
+SET
+	BaseID = {{TablaBodegas.updatedRow.BaseID}},
+	NombreBase = {{TablaBodegas.updatedRow.NombreBase}},
+  FuncionarioContacto = {{TablaBodegas.updatedRow.FuncionarioContacto}},
+  TelefonoContacto = {{TablaBodegas.updatedRow.TelefonoContacto}},
+  CorreoContacto = {{TablaBodegas.updatedRow.CorreoContacto}}
+WHERE TupleUniqueID = {{ TablaBodegas.updatedRow.TupleUniqueID }};

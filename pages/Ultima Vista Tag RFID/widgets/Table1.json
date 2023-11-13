@@ -210,6 +210,7 @@
     "rightColumn": 64,
     "textSize": "0.875rem",
     "widgetId": "o5l264uj9i",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{LastBodega.data}}",
     "label": "Data",

@@ -884,6 +884,7 @@
     "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "o15m5mle64",
+    "enableServerSideFiltering": false,
     "minWidth": 450,
     "tableData": "{{getPseudoPrueba.data}}",
     "label": "Data",
