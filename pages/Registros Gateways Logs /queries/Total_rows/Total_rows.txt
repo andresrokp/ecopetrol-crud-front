@@ -1,0 +1,2 @@
+SELECT COUNT(*) AS TotalRows
+FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS;

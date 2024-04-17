@@ -27,7 +27,7 @@
     "isVisible": true,
     "enableClientSideSearch": true,
     "version": 1,
-    "totalRecordsCount": "10",
+    "totalRecordsCount": "",
     "isLoading": false,
     "childStylesheet": {
         "button": {

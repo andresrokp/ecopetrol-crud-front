@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "LastBodega",
+    "name": "TotalSize",
     "datasource": {
       "name": "SQL pool ECO",
       "pluginId": "mssql-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Ultima Vista Tag RFID",
+    "pageId": "Registros Gateways Logs ",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "WITH CTE AS (\n    SELECT ts,TagID, BodegaID, ROW_NUMBER() OVER (PARTITION BY TagID ORDER BY ts DESC) AS posicion\n    FROM (\n\t\t\tSELECT TOP 1000 ts, TagID, BodegaID\n\t\t\tFROM contraincendiosh.REGISTROS_GATEWAYS_LOGS\n\t\t) Subquery\n)\nSELECT \n\tCTE.ts,\n\tR.NombreEquipo,\n\tB.NombreBodega,\n\tCTE.TagID\nFROM CTE\n\tLEFT JOIN contraincendiosh.TAGS_HYDRATION TH ON CTE.TagID = TH.TagID\n\tLEFT JOIN contraincendiosh.EQUIPOS R ON R.EquipoID = TH.EquipoID\n\tLEFT JOIN contraincendiosh.BODEGAS B ON CTE.BodegaID = B.BodegaID\nWHERE posicion = 1\nORDER BY ts DESC",
+      "body": "EXEC sp_spaceused 'SELECT TOP 1000 * FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS';",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-06-09T15:20:50Z"
+    "createdAt": "2024-04-17T15:31:58Z"
   },
-  "id": "Ultima Vista Tag RFID_LastBodega",
+  "id": "Registros Gateways Logs _TotalSize",
   "deleted": false,
-  "gitSyncId": "647f51050267f030216224f1_648343525ccd0d13e4f8e4e2"
+  "gitSyncId": "647f51050267f030216224f1_661feb6e39177b291f178d7e"
 }

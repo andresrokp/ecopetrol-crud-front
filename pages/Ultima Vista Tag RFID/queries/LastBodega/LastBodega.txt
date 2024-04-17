@@ -1,6 +1,9 @@
 WITH CTE AS (
     SELECT ts,TagID, BodegaID, ROW_NUMBER() OVER (PARTITION BY TagID ORDER BY ts DESC) AS posicion
-    FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS
+    FROM (
+			SELECT TOP 1000 ts, TagID, BodegaID
+			FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS
+		) Subquery
 )
 SELECT 
 	CTE.ts,

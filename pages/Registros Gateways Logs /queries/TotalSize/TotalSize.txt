@@ -1,0 +1,1 @@
+EXEC sp_spaceused 'SELECT TOP 1000 * FROM contraincendiosh.REGISTROS_GATEWAYS_LOGS';
