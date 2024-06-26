@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "647f51050267f030216224f1_65b03d26501b0e660571eb19",
+  "id": "FORMULARIO EN CAMPO_Validation",
   "unpublishedCollection": {
     "name": "Validation",
     "pageId": "FORMULARIO EN CAMPO",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,10 +15,6 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "FORMULARIO EN CAMPO_Validation",
-  "deleted": false,
-  "gitSyncId": "647f51050267f030216224f1_65b03d26501b0e660571eb19"
+    ]
+  }
 }
